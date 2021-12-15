@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="pS4-Q6-7sX" customClass="IconWithCellItem" customModule="Pixel_Photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="74" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="74" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M67-Bk-OwL">
+                        <rect key="frame" x="19.5" y="10" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="Kpr-ed-ajR"/>
+                            <constraint firstAttribute="height" constant="35" id="mgr-8y-Gvf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF0-fN-Gra">
+                        <rect key="frame" x="0.0" y="45" width="74" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="VkV-VV-ncJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IF0-fN-Gra" secondAttribute="trailing" id="0DD-6W-RKW"/>
+                <constraint firstAttribute="bottom" secondItem="IF0-fN-Gra" secondAttribute="bottom" constant="5" id="72h-yJ-x3u"/>
+                <constraint firstItem="M67-Bk-OwL" firstAttribute="centerX" secondItem="pS4-Q6-7sX" secondAttribute="centerX" id="SOo-ay-KTa"/>
+                <constraint firstItem="M67-Bk-OwL" firstAttribute="top" secondItem="pS4-Q6-7sX" secondAttribute="top" constant="10" id="TdC-rO-e6J"/>
+                <constraint firstItem="IF0-fN-Gra" firstAttribute="top" secondItem="M67-Bk-OwL" secondAttribute="bottom" id="dwq-cC-m8o"/>
+                <constraint firstItem="IF0-fN-Gra" firstAttribute="leading" secondItem="pS4-Q6-7sX" secondAttribute="leading" id="rGq-b3-h3h"/>
+            </constraints>
+            <size key="customSize" width="74" height="50"/>
+            <connections>
+                <outlet property="iconImage" destination="M67-Bk-OwL" id="OCK-Rg-5Fg"/>
+                <outlet property="iconLabel" destination="IF0-fN-Gra" id="kKw-Oe-a9h"/>
+            </connections>
+            <point key="canvasLocation" x="317" y="376"/>
+        </collectionViewCell>
+    </objects>
+</document>

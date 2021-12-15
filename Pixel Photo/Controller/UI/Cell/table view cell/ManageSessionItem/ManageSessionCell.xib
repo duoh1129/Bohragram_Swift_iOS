@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SessionCell" rowHeight="125" id="KGk-i7-Jjw" customClass="ManageSessionCell" customModule="Pixel_Photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoC-cY-d8E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbf-Ya-Ziu" customClass="RoundView" customModule="Pixel_Photo" customModuleProvider="target">
+                                <rect key="frame" x="10" y="38" width="50" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDT-TX-mVB">
+                                        <rect key="frame" x="18.5" y="15.5" width="13" height="19"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45098039220000002" green="0.20392156859999999" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hUU-of-ckb"/>
+                                    <constraint firstItem="ZDT-TX-mVB" firstAttribute="centerX" secondItem="qbf-Ya-Ziu" secondAttribute="centerX" id="oDN-zG-Ino"/>
+                                    <constraint firstAttribute="width" constant="50" id="rub-n4-oP2"/>
+                                    <constraint firstItem="ZDT-TX-mVB" firstAttribute="centerY" secondItem="qbf-Ya-Ziu" secondAttribute="centerY" id="tVI-gH-A6g"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="linux" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMd-Qb-y3Q">
+                                <rect key="frame" x="68" y="33" width="197" height="17"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue2-UC-ACh" customClass="RoundButton" customModule="Pixel_Photo" customModuleProvider="target">
+                                <rect key="frame" x="275" y="28" width="30" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XQp-Tm-gfk"/>
+                                    <constraint firstAttribute="width" constant="30" id="lnE-vi-5bD"/>
+                                </constraints>
+                                <state key="normal" image="close2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Close:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="SM2-hx-F90"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browser: Unkown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pr-8l-jxF">
+                                <rect key="frame" x="68" y="55" width="197" height="15"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last seen: 152342390" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdi-AX-VEP">
+                                <rect key="frame" x="68" y="75" width="197" height="15"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP Address : 50.103.207236" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1d-8k-deD">
+                                <rect key="frame" x="68" y="95" width="197" height="15"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Color-1"/>
+                        <constraints>
+                            <constraint firstItem="Zdi-AX-VEP" firstAttribute="leading" secondItem="2pr-8l-jxF" secondAttribute="leading" id="BKm-eh-JlV"/>
+                            <constraint firstItem="QMd-Qb-y3Q" firstAttribute="top" secondItem="qbf-Ya-Ziu" secondAttribute="top" constant="-5" id="CAq-uG-v6j"/>
+                            <constraint firstItem="QMd-Qb-y3Q" firstAttribute="leading" secondItem="qbf-Ya-Ziu" secondAttribute="trailing" constant="8" id="Egh-Po-arD"/>
+                            <constraint firstItem="2pr-8l-jxF" firstAttribute="top" secondItem="QMd-Qb-y3Q" secondAttribute="bottom" constant="5" id="FfW-fZ-dPK"/>
+                            <constraint firstItem="2pr-8l-jxF" firstAttribute="leading" secondItem="QMd-Qb-y3Q" secondAttribute="leading" id="MlZ-Z1-hxq"/>
+                            <constraint firstItem="2pr-8l-jxF" firstAttribute="trailing" secondItem="QMd-Qb-y3Q" secondAttribute="trailing" id="QNo-Fg-Cq2"/>
+                            <constraint firstItem="Zdi-AX-VEP" firstAttribute="top" secondItem="2pr-8l-jxF" secondAttribute="bottom" constant="5" id="Tsb-c1-Pc7"/>
+                            <constraint firstItem="ue2-UC-ACh" firstAttribute="leading" secondItem="QMd-Qb-y3Q" secondAttribute="trailing" constant="10" id="VNm-GT-1sp"/>
+                            <constraint firstItem="s1d-8k-deD" firstAttribute="top" secondItem="Zdi-AX-VEP" secondAttribute="bottom" constant="5" id="W5z-Lz-JIm"/>
+                            <constraint firstItem="s1d-8k-deD" firstAttribute="leading" secondItem="Zdi-AX-VEP" secondAttribute="leading" id="efQ-cR-nsO"/>
+                            <constraint firstItem="ue2-UC-ACh" firstAttribute="top" secondItem="QMd-Qb-y3Q" secondAttribute="top" constant="-5" id="fFf-a8-LFo"/>
+                            <constraint firstItem="qbf-Ya-Ziu" firstAttribute="centerY" secondItem="FoC-cY-d8E" secondAttribute="centerY" id="iok-lJ-T7C"/>
+                            <constraint firstAttribute="trailing" secondItem="ue2-UC-ACh" secondAttribute="trailing" constant="15" id="jMF-2b-9cy"/>
+                            <constraint firstItem="qbf-Ya-Ziu" firstAttribute="leading" secondItem="FoC-cY-d8E" secondAttribute="leading" constant="10" id="kMz-mz-FGF"/>
+                            <constraint firstItem="Zdi-AX-VEP" firstAttribute="trailing" secondItem="2pr-8l-jxF" secondAttribute="trailing" id="y7u-lI-f4Z"/>
+                            <constraint firstItem="s1d-8k-deD" firstAttribute="trailing" secondItem="Zdi-AX-VEP" secondAttribute="trailing" id="zrq-KC-RJC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="Color"/>
+                <constraints>
+                    <constraint firstItem="FoC-cY-d8E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8ig-K4-tXe"/>
+                    <constraint firstItem="FoC-cY-d8E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sgQ-Zt-5xf"/>
+                    <constraint firstAttribute="trailing" secondItem="FoC-cY-d8E" secondAttribute="trailing" id="u0p-qd-YhL"/>
+                    <constraint firstAttribute="bottom" secondItem="FoC-cY-d8E" secondAttribute="bottom" id="zzs-yK-2fK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="Color"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="browserLabel" destination="2pr-8l-jxF" id="qmg-Kl-LPI"/>
+                <outlet property="ipAddress" destination="s1d-8k-deD" id="5xs-ek-USp"/>
+                <outlet property="lastSeenLabel" destination="Zdi-AX-VEP" id="f8e-eE-UIS"/>
+                <outlet property="pcFirstName" destination="ZDT-TX-mVB" id="Xak-9C-T9P"/>
+                <outlet property="platform" destination="QMd-Qb-y3Q" id="jLS-le-LK8"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="160.71428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close2" width="25" height="25"/>
+        <namedColor name="Color">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color-1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

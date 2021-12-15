@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Suggested User Controller-->
+        <scene sceneID="otf-hd-NHc">
+            <objects>
+                <viewController storyboardIdentifier="SuggestedUserVC" id="gPP-TG-z40" customClass="SuggestedUserController" customModule="Pixel_Photo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cor-QJ-qE5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eWl-PI-hMK">
+                                <rect key="frame" x="8" y="44" width="398" height="818"/>
+                                <color key="backgroundColor" name="Color"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="08Y-qh-FQ0">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gPP-TG-z40" id="pJ3-yx-3uj"/>
+                                    <outlet property="delegate" destination="gPP-TG-z40" id="ssa-Ks-U9Z"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dXa-m3-F5d"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="eWl-PI-hMK" firstAttribute="leading" secondItem="dXa-m3-F5d" secondAttribute="leading" constant="8" id="35L-yu-I4q"/>
+                            <constraint firstItem="dXa-m3-F5d" firstAttribute="bottom" secondItem="eWl-PI-hMK" secondAttribute="bottom" id="7U0-Fw-vkO"/>
+                            <constraint firstItem="dXa-m3-F5d" firstAttribute="trailing" secondItem="eWl-PI-hMK" secondAttribute="trailing" constant="8" id="fFh-nH-qh2"/>
+                            <constraint firstItem="eWl-PI-hMK" firstAttribute="top" secondItem="dXa-m3-F5d" secondAttribute="top" id="xG7-et-XlD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="eWl-PI-hMK" id="uiW-LZ-9ev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMU-d6-TfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Color">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

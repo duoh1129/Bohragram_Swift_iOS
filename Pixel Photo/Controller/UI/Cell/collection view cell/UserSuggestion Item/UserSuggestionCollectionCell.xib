@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserSuggestionCollectionCell" id="247-mR-zSG" customClass="UserSuggestionCollectionCell" customModule="Pixel_Photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="137" height="149"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vsh-il-HuX">
+                        <rect key="frame" x="4" y="8" width="129" height="133"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_profile_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Dpq-in-ONx" customClass="RoundImage" customModule="Pixel_Photo" customModuleProvider="target">
+                                <rect key="frame" x="44.5" y="8" width="40" height="40"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qS3-zF-eyH"/>
+                                    <constraint firstAttribute="width" constant="40" id="zDO-OS-I2R"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="James Adam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-6g-t9c">
+                                <rect key="frame" x="8" y="60" width="113" height="16"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUi-tK-stS" customClass="RoundButton" customModule="Pixel_Photo" customModuleProvider="target">
+                                <rect key="frame" x="5" y="99.5" width="119" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Oyi-jZ-eIV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="13"/>
+                                <state key="normal" title="Follow">
+                                    <color key="titleColor" red="0.59215686274509804" green="0.40784313725490196" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                        <real key="value" value="11.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorV">
+                                        <color key="value" systemColor="systemPurpleColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59019809960000003" green="0.40783655639999999" blue="0.88605058189999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="followPressed:" destination="247-mR-zSG" eventType="touchUpInside" id="mlm-a8-oBf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@aidil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgb-Ns-Jwb">
+                                <rect key="frame" x="8" y="76" width="113" height="15"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Color-1"/>
+                        <constraints>
+                            <constraint firstItem="pgb-Ns-Jwb" firstAttribute="top" secondItem="gpa-6g-t9c" secondAttribute="bottom" id="DYj-zL-8Q8"/>
+                            <constraint firstItem="WUi-tK-stS" firstAttribute="leading" secondItem="Vsh-il-HuX" secondAttribute="leading" constant="5" id="FNz-no-tOu"/>
+                            <constraint firstItem="pgb-Ns-Jwb" firstAttribute="leading" secondItem="Vsh-il-HuX" secondAttribute="leading" constant="8" id="ISD-hQ-TkX"/>
+                            <constraint firstItem="Dpq-in-ONx" firstAttribute="top" secondItem="Vsh-il-HuX" secondAttribute="top" constant="8" id="MA9-pT-90Z"/>
+                            <constraint firstItem="WUi-tK-stS" firstAttribute="centerX" secondItem="pgb-Ns-Jwb" secondAttribute="centerX" id="StZ-PJ-YeQ"/>
+                            <constraint firstItem="WUi-tK-stS" firstAttribute="top" secondItem="pgb-Ns-Jwb" secondAttribute="bottom" constant="8.5" id="cAz-Zm-oq6"/>
+                            <constraint firstItem="Dpq-in-ONx" firstAttribute="centerX" secondItem="Vsh-il-HuX" secondAttribute="centerX" id="d0Z-EX-vho"/>
+                            <constraint firstAttribute="trailing" secondItem="pgb-Ns-Jwb" secondAttribute="trailing" constant="8" id="eDP-Ok-rDm"/>
+                            <constraint firstItem="gpa-6g-t9c" firstAttribute="top" secondItem="Dpq-in-ONx" secondAttribute="bottom" constant="12" id="fk9-Id-5BQ"/>
+                            <constraint firstAttribute="trailing" secondItem="WUi-tK-stS" secondAttribute="trailing" constant="5" id="igC-E1-feX"/>
+                            <constraint firstAttribute="trailing" secondItem="gpa-6g-t9c" secondAttribute="trailing" constant="8" id="jSA-67-uVZ"/>
+                            <constraint firstItem="gpa-6g-t9c" firstAttribute="leading" secondItem="Vsh-il-HuX" secondAttribute="leading" constant="8" id="wQ7-uz-YAR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ENY-4h-zax"/>
+            <color key="backgroundColor" name="Color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Vsh-il-HuX" secondAttribute="trailing" constant="4" id="3IY-Ul-xiJ"/>
+                <constraint firstItem="Vsh-il-HuX" firstAttribute="leading" secondItem="247-mR-zSG" secondAttribute="leading" constant="4" id="Frp-Yj-MoA"/>
+                <constraint firstItem="Vsh-il-HuX" firstAttribute="top" secondItem="247-mR-zSG" secondAttribute="top" constant="8" id="fHr-Ck-Qd6"/>
+                <constraint firstAttribute="bottom" secondItem="Vsh-il-HuX" secondAttribute="bottom" constant="8" id="llm-zU-dTy"/>
+            </constraints>
+            <size key="customSize" width="137" height="149"/>
+            <connections>
+                <outlet property="containerView" destination="Vsh-il-HuX" id="3U9-Nf-cH6"/>
+                <outlet property="followBtn" destination="WUi-tK-stS" id="Xjy-UJ-G7t"/>
+                <outlet property="profileImgView" destination="Dpq-in-ONx" id="d1x-Dg-Qug"/>
+                <outlet property="profileNameLbl" destination="gpa-6g-t9c" id="czh-S4-R7I"/>
+                <outlet property="userNameLbl" destination="pgb-Ns-Jwb" id="dRO-ag-VR6"/>
+            </connections>
+            <point key="canvasLocation" x="202.40000000000001" y="187.55622188905548"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="Dpq-in-ONx">
+            <size key="intrinsicContentSize" width="112.5" height="112.5"/>
+        </designable>
+        <designable name="WUi-tK-stS">
+            <size key="intrinsicContentSize" width="42" height="27"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="img_profile_placeholder" width="112.5" height="112.5"/>
+        <namedColor name="Color">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color-1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

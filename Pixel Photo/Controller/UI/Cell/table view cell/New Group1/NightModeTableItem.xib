@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NightModeTableItem" rowHeight="84" id="Nuh-Wu-epb" customClass="NightModeTableItem" customModule="Pixel_Photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nuh-Wu-epb" id="sg2-0g-NEV">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9iT-RD-fL8">
+                        <rect key="frame" x="16" y="29.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="5Sg-RT-YFf"/>
+                            <constraint firstAttribute="height" constant="25" id="fO7-Fq-h6T"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gi-KG-faf">
+                        <rect key="frame" x="53" y="29.5" width="39.5" height="25"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVa-VB-pSq">
+                        <rect key="frame" x="297" y="26.5" width="49" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="oBq-T3-e8N"/>
+                            <constraint firstAttribute="width" constant="47" id="uhy-r1-JNM"/>
+                        </constraints>
+                        <connections>
+                            <action selector="togglePressed:" destination="Nuh-Wu-epb" eventType="valueChanged" id="W3W-li-5KA"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fVa-VB-pSq" secondAttribute="trailing" constant="11" id="DUr-m4-aGJ"/>
+                    <constraint firstItem="6gi-KG-faf" firstAttribute="height" secondItem="9iT-RD-fL8" secondAttribute="height" id="Dn1-d9-a4l"/>
+                    <constraint firstItem="fVa-VB-pSq" firstAttribute="centerY" secondItem="6gi-KG-faf" secondAttribute="centerY" id="Jxm-pP-IM1"/>
+                    <constraint firstItem="9iT-RD-fL8" firstAttribute="centerY" secondItem="sg2-0g-NEV" secondAttribute="centerY" id="Of2-Wt-2wd"/>
+                    <constraint firstItem="6gi-KG-faf" firstAttribute="leading" secondItem="9iT-RD-fL8" secondAttribute="trailing" constant="12" id="TxH-Js-HwI"/>
+                    <constraint firstItem="9iT-RD-fL8" firstAttribute="leading" secondItem="sg2-0g-NEV" secondAttribute="leading" constant="16" id="YoS-fD-ToB"/>
+                    <constraint firstItem="6gi-KG-faf" firstAttribute="centerY" secondItem="9iT-RD-fL8" secondAttribute="centerY" id="dHL-5H-Emm"/>
+                    <constraint firstItem="fVa-VB-pSq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6gi-KG-faf" secondAttribute="trailing" constant="16" id="hSq-Q1-x61"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <viewLayoutGuide key="safeArea" id="wl7-aG-4VX"/>
+            <connections>
+                <outlet property="iconimage" destination="9iT-RD-fL8" id="VfA-R0-qDo"/>
+                <outlet property="switchLabel" destination="fVa-VB-pSq" id="daj-xg-HP6"/>
+                <outlet property="titleLabel" destination="6gi-KG-faf" id="FQC-Fv-RBN"/>
+            </connections>
+            <point key="canvasLocation" x="160.1449275362319" y="163.39285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

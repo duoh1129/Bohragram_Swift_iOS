@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Show All Explore Posts Controller-->
+        <scene sceneID="brz-U8-Z6n">
+            <objects>
+                <viewController storyboardIdentifier="ExplorePostController" id="VHU-3e-WT9" customClass="ShowAllExplorePostsController" customModule="Pixel_Photo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a9G-9s-mxB" customClass="ShowAll">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hbk-ja-SqJ">
+                                <rect key="frame" x="8" y="54" width="398" height="808"/>
+                                <color key="backgroundColor" name="Color"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dih-4e-va7">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="VHU-3e-WT9" id="A9I-bk-OCc"/>
+                                    <outlet property="delegate" destination="VHU-3e-WT9" id="WVD-Gk-Ybv"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9BC-Ms-C32"/>
+                        <color key="backgroundColor" name="Color"/>
+                        <constraints>
+                            <constraint firstItem="9BC-Ms-C32" firstAttribute="bottom" secondItem="Hbk-ja-SqJ" secondAttribute="bottom" id="Ccf-eG-8nX"/>
+                            <constraint firstItem="9BC-Ms-C32" firstAttribute="trailing" secondItem="Hbk-ja-SqJ" secondAttribute="trailing" constant="8" id="czf-Ud-iie"/>
+                            <constraint firstItem="Hbk-ja-SqJ" firstAttribute="top" secondItem="9BC-Ms-C32" secondAttribute="top" constant="10" id="d5W-Ey-Nk2"/>
+                            <constraint firstItem="Hbk-ja-SqJ" firstAttribute="leading" secondItem="9BC-Ms-C32" secondAttribute="leading" constant="8" id="foy-nV-2fH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Hbk-ja-SqJ" id="Ite-7A-IqX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Yd-ft-0oa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Color">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
